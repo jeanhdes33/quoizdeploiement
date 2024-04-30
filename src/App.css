@@ -1,0 +1,191 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: 'varela';
+
+}
+
+.register-form-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto; 
+}
+
+
+.register-form-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.register-form-container::-webkit-scrollbar-track {
+  background-color: #67C6E3;
+}
+
+.register-form-container::-webkit-scrollbar-thumb {
+  background-color: #5356FF; 
+  border-radius: 5px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  padding: 20px;
+  width: calc(66.67%); /* 2/3 de la largeur */
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.category-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.category-name {
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+  text-align: center;
+}.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* Ajout d'une marge supérieure */
+}
+
+.quiz-content {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.question-section {
+  width: 100%; /* Largeur maximale pour le bloc de question */
+  min-width: 300px; /* Largeur minimale pour le bloc de question */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #378CE7; /* Couleur secondary */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centrage du texte */
+}
+
+.question-count {
+  font-size: 24px;
+  color: white; /* Couleur du texte */
+  padding: 5px 10px; /* Ajout de padding pour l'espace autour du numéro de la question */
+  border-radius: 5px; /* Ajout de border-radius pour arrondir les coins */
+}
+
+.question-text {
+  margin-top: 10px;
+  font-size: 28px; /* Taille de la question */
+}
+
+.answer-section {
+  width: 100%; /* Largeur maximale pour le bloc de réponse */
+  min-width: 300px; /* Largeur minimale pour le bloc de réponse */
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-section button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #DFF5FF; /* Couleur d'accent */
+  color: black; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition pour l'effet hover */
+}
+
+.answer-section button:hover {
+  background-color: #67C6E3; /* Couleur tertiaire */
+}
+
+.score-section, .score-final {
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #378CE7; /* Couleur secondary */
+  color: white; /* Couleur du texte */
+}
+
+/* Ajoutez ces règles CSS dans votre fichier CSS */
+
+.quiz-content .answer-section button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-content .answer-section button.correct {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.quiz-content .answer-section button.share {
+  background-color: #25049b;
+  color: #fff;
+}
+
+.quiz-content .answer-section button.incorrect {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.quiz-content .answer-section button:disabled {
+  cursor: not-allowed;
+}
+.quiz-content .answer-section button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajout de la règle de transition */
+}
+
+.quiz-content .answer-section button:hover {
+  background-color: #DFF5FF; /* Couleur d'accent au survol */
+}
+
+.time-left { width: 100%; /* Largeur maximale pour le bloc de question */
+  min-width: 300px; /* Largeur minimale pour le bloc de question */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #378CE7; /* Couleur secondary */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centrage du texte */}
